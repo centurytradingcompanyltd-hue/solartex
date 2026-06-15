@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="../assets/css/styles.css" />
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polygon points='50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5' fill='%23c8992a'/></svg>" />
 </head>
-<body>
+<body class="product-fertilizer">
 
 <nav class="navbar">
   <div class="nav-inner">
@@ -26,7 +26,7 @@
       <li><a href="streetlight.html">Street Light</a></li>
       <li><a href="fertilizer.html">Fertilizer</a></li>
       <li><a href="hospital-equipment.html">Hospital Equipment</a></li>
-      <li><a href="solar-panel.html" class="nav-cta">Solar Panels</a></li>
+      <li><a href="solar-panel.html" class="">Solar Panels</a></li>
     </ul>
     <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
   </div>
@@ -45,7 +45,11 @@
     <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1400&auto=format&fit=crop" alt="Agricultural Fertilizer" />
   </div>
   <div class="page-hero-content">
-    <div class="breadcrumb">
+    <div class="product-icon-badge">
+          <div class="badge-icon"><svg viewBox="0 0 24 24"><path d="M17 8C8 10 5.9 16.17 3.82 19.5 2.86 20.67 2 21.55 2 21.55L4 23s6-5 14-7c-1.5-2.5-1-5-1-8z"/></svg></div>
+          Agriculture
+        </div>
+        <div class="breadcrumb">
       <a href="../index.html">Home</a><span>›</span><span>Fertilizer Supply</span>
     </div>
     <h1>Fertilizer Supply</h1>
@@ -143,14 +147,15 @@
 
   <aside class="tender-sidebar">
     <div class="sidebar-card">
-      <h4>Tender Details</h4>
+      <div class="sidebar-card-header"><h4>Tender Details</h4></div>
+      <div class="sidebar-card-body">
       <div class="sidebar-detail"><div class="sd-label">Reference No.</div><div class="sd-value">STX-003-2025</div></div>
       <div class="sidebar-detail"><div class="sd-label">Publication Date</div><div class="sd-value">01 December 2025</div></div>
       <div class="sidebar-detail"><div class="sd-label">Closing Date</div><div class="sd-value deadline">28 February 2026 — 5:00 PM</div></div>
       <div class="sidebar-detail"><div class="sd-label">Category</div><div class="sd-value">Agriculture</div></div>
       <div class="sidebar-detail"><div class="sd-label">Bid Security</div><div class="sd-value">KES 25,000</div></div>
       <div class="sidebar-detail"><div class="sd-label">Enquiries</div><div class="sd-value">procurement@solartex.co.ke</div></div>
-      <div style="margin-top:1.5rem;"><a href="#apply" class="btn-primary" style="width:100%; justify-content:center;">Apply for This Tender</a></div>
+      <div class="sidebar-alert"><svg viewBox="0 0 24 24"><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>Submissions after the closing date will not be considered.</div><div style="margin-top:1rem;"><a href="#apply" class="btn-primary" style="width:100%; justify-content:center;">Apply for This Tender</a></div>
     </div>
   </aside>
 </div>
