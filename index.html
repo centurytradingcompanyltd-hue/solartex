@@ -6,39 +6,38 @@
   <title>Solartex Limited — Tender Portal</title>
   <meta name="description" content="Open tenders for transformer supply, street lighting, fertilizer, hospital equipment, and solar panels." />
   <link rel="stylesheet" href="assets/css/styles.css" />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polygon points='50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5' fill='%23c8992a'/></svg>" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23f97316'/><path d='M16 6l-2 7H7l6 4-2 7 5-4 5 4-2-7 6-4h-7z' fill='white'/></svg>" />
 </head>
 <body>
 
-<!-- ── NAVBAR ── -->
+<!-- TOP BAR -->
+<div class="top-bar">
+  5 tenders currently open — Closing dates from January to March 2026 &nbsp;|&nbsp; <a href="mailto:procurement@solartex.co.ke">procurement@solartex.co.ke</a>
+</div>
+
+<!-- NAVBAR -->
 <nav class="navbar">
   <div class="nav-inner">
     <a href="index.html" class="nav-logo">
-      <div class="nav-logo-mark">
-        <svg viewBox="0 0 24 24"><path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.5L20 9v6l-8 4-8-4V9l8-4.5z"/></svg>
+      <div class="nav-logo-icon">
+        <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
       </div>
       <div class="nav-logo-text">
         <span class="brand">Solartex Limited</span>
         <span class="tagline">Procurement Portal</span>
       </div>
     </a>
-
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="tenders/transformer.html">Transformer</a></li>
       <li><a href="tenders/streetlight.html">Street Light</a></li>
       <li><a href="tenders/fertilizer.html">Fertilizer</a></li>
-      <li><a href="tenders/hospital-equipment.html">Hospital Equipment</a></li>
-      <li><a href="tenders/solar-panel.html" class="nav-cta">Solar Panels</a></li>
+      <li><a href="tenders/hospital-equipment.html">Hospital Equip.</a></li>
+      <li><a href="tenders/solar-panel.html" class="">Solar Panels</a></li>
     </ul>
-
-    <div class="hamburger" id="hamburger">
-      <span></span><span></span><span></span>
-    </div>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
   </div>
 </nav>
-
-<!-- Mobile Menu -->
 <div class="mobile-menu" id="mobileMenu">
   <a href="index.html">Home</a>
   <a href="tenders/transformer.html">Transformer Supply</a>
@@ -48,285 +47,397 @@
   <a href="tenders/solar-panel.html">Solar Panels</a>
 </div>
 
-<!-- ── HERO ── -->
+<!-- HERO -->
 <section class="hero">
-  <div class="hero-bg-pattern"></div>
-  <div class="hero-glow"></div>
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1497440001374-f26997328c1b?w=1600&auto=format&fit=crop" alt="Supply chain infrastructure" />
+  </div>
   <div class="hero-inner">
-    <div class="hero-left">
-      <div class="hero-eyebrow fade-up">Open Procurement — 2025</div>
+    <div class="hero-content">
+      <div class="hero-eyebrow fade-up">Open Procurement — 2025 / 2026</div>
       <h1 class="hero-title fade-up">
-        Supply Tenders<br>
-        <em>Now Open</em>
+        Supplier Tenders<br><span>Now Open</span>
       </h1>
       <p class="hero-desc fade-up">
-        Solartex Limited invites qualified suppliers and contractors to submit bids for five active procurement categories. All registered businesses meeting our eligibility criteria are welcome to apply.
+        Solartex Limited invites qualified and registered suppliers to submit bids across five active procurement categories. All eligible businesses meeting our criteria are welcome to apply.
       </p>
       <div class="hero-actions fade-up">
         <a href="#tenders" class="btn-primary">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2"/></svg>
           View All Tenders
         </a>
-        <a href="#why" class="btn-outline">Learn More</a>
-      </div>
-
-      <div class="hero-stats fade-up">
-        <div class="stat-item">
-          <div class="number">5</div>
-          <div class="label">Active Tenders</div>
-        </div>
-        <div class="stat-item">
-          <div class="number">30</div>
-          <div class="label">Days Remaining</div>
-        </div>
-        <div class="stat-item">
-          <div class="number">100%</div>
-          <div class="label">Open Competition</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="hero-image-stack">
-      <img
-        class="hero-img-main"
-        src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&auto=format&fit=crop"
-        alt="Solar energy infrastructure"
-      />
-      <div class="hero-img-badge">
-        <div class="badge-num">2025</div>
-        <div class="badge-txt">Procurement<br>Cycle</div>
+        <a href="#how-to-apply" class="btn-outline-white">How to Apply</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ── CAROUSEL SECTION ── -->
-<section class="carousel-section" id="tenders">
-  <div class="section-header">
-    <div class="section-eyebrow">Active Procurement</div>
-    <h2 class="section-title">Open <span>Tender Categories</span></h2>
-    <p class="section-desc">Click on any tender below to view full specifications and submit your application.</p>
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stats-bar-inner">
+    <div class="stat-block">
+      <div class="num">5</div>
+      <div class="lbl">Open Tenders</div>
+    </div>
+    <div class="stat-block">
+      <div class="num">30+</div>
+      <div class="lbl">Days to Apply</div>
+    </div>
+    <div class="stat-block">
+      <div class="num">14</div>
+      <div class="lbl">Day Evaluation</div>
+    </div>
+    <div class="stat-block">
+      <div class="num">100%</div>
+      <div class="lbl">Open Competition</div>
+    </div>
+  </div>
+</div>
+
+<!-- TENDER CAROUSEL -->
+<section class="spotlight-section" id="tenders">
+  <div class="spotlight-header">
+    <div class="spotlight-header-inner">
+      <div class="section-eyebrow">Active Procurement — 2025 / 2026</div>
+      <h2 class="section-title">Open <span>Tender Categories</span></h2>
+      <p class="section-desc">Browse each product category, review the specifications, and submit your application before the closing date.</p>
+    </div>
+    <div class="spotlight-tab-bar" id="spotlightTabs">
+      <button class="stab active" data-slide="0">
+        <span class="stab-dot" style="background:#2563eb"></span>Transformer
+      </button>
+      <button class="stab" data-slide="1">
+        <span class="stab-dot" style="background:#ca8a04"></span>Street Light
+      </button>
+      <button class="stab" data-slide="2">
+        <span class="stab-dot" style="background:#16a34a"></span>Fertilizer
+      </button>
+      <button class="stab" data-slide="3">
+        <span class="stab-dot" style="background:#0891b2"></span>Hospital Equip.
+      </button>
+      <button class="stab" data-slide="4">
+        <span class="stab-dot" style="background:#f97316"></span>Solar Panels
+      </button>
+    </div>
   </div>
 
-  <div class="carousel-wrapper">
-    <div class="carousel-track" id="carouselTrack">
+  <div class="spotlight-track-wrap">
+    <div class="spotlight-track" id="spotlightTrack">
 
-      <!-- Card 1: Transformer -->
-      <div class="tender-card">
-        <div class="card-img-wrap">
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop" alt="Electrical Transformer" />
-          <div class="card-ref">STX-001</div>
-          <div class="card-status">Open</div>
+      <!-- SLIDE 1: Transformer -->
+      <div class="spotlight-slide active" data-product="transformer" style="--pc:#2563eb;--pc-pale:#eff6ff;">
+        <div class="slide-img-col">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&auto=format&fit=crop" alt="Electrical Transformer" />
+          <div class="slide-ref-tag">STX-001</div>
+          <div class="slide-status">● Open</div>
         </div>
-        <div class="card-body">
-          <div class="card-title">Transformer Supply</div>
-          <p class="card-excerpt">Supply and delivery of distribution transformers ranging from 50 kVA to 1000 kVA for grid infrastructure projects.</p>
-          <div class="card-meta">
-            <div class="meta-item">
-              <span class="meta-label">Deadline</span>
-              <span class="meta-value">31 Jan 2026</span>
+        <div class="slide-content-col">
+          <div class="slide-cat" style="color:#2563eb;">Electrical Infrastructure</div>
+          <h2 class="slide-title">Transformer Supply</h2>
+          <p class="slide-desc">Solartex Limited invites qualified suppliers for the supply and delivery of electrical distribution transformers ranging from 50 kVA to 1,000 kVA. Suitable for manufacturers and authorised distributors with proven track records.</p>
+          <div class="slide-highlights">
+            <div class="slide-highlight">
+              <div class="sh-label">Ref No.</div>
+              <div class="sh-val">STX-001-2025</div>
             </div>
-            <div class="meta-item">
-              <span class="meta-label">Category</span>
-              <span class="meta-value">Electrical</span>
+            <div class="slide-highlight">
+              <div class="sh-label">Category</div>
+              <div class="sh-val">Electrical</div>
+            </div>
+            <div class="slide-highlight">
+              <div class="sh-label">Bid Security</div>
+              <div class="sh-val">KES 50,000</div>
+            </div>
+            <div class="slide-highlight deadline-hl">
+              <div class="sh-label">Closes</div>
+              <div class="sh-val">31 Jan 2026</div>
             </div>
           </div>
-          <a href="tenders/transformer.html" class="card-link">
-            Apply Now
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
+          <div class="slide-actions">
+            <a href="tenders/transformer.html" class="slide-btn-primary" style="background:#2563eb;border-color:#2563eb;">
+              View Tender &amp; Apply
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <div class="slide-progress-bar"><div class="slide-progress-fill" style="background:#2563eb;" id="progressBar"></div></div>
+          </div>
         </div>
       </div>
 
-      <!-- Card 2: Street Light -->
-      <div class="tender-card">
-        <div class="card-img-wrap">
-          <img src="https://images.unsplash.com/photo-1567168539614-e68667f50ea5?w=600&auto=format&fit=crop" alt="Street Lighting" />
-          <div class="card-ref">STX-002</div>
-          <div class="card-status">Open</div>
+      <!-- SLIDE 2: Street Light -->
+      <div class="spotlight-slide" data-product="streetlight" style="--pc:#ca8a04;--pc-pale:#fefce8;">
+        <div class="slide-img-col">
+          <img src="https://images.unsplash.com/photo-1567168539614-e68667f50ea5?w=900&auto=format&fit=crop" alt="Street Lighting" />
+          <div class="slide-ref-tag">STX-002</div>
+          <div class="slide-status">● Open</div>
         </div>
-        <div class="card-body">
-          <div class="card-title">Street Light Supply</div>
-          <p class="card-excerpt">Procurement of LED street lighting systems including poles, luminaires, and smart dimming controls for urban installations.</p>
-          <div class="card-meta">
-            <div class="meta-item">
-              <span class="meta-label">Deadline</span>
-              <span class="meta-value">15 Feb 2026</span>
+        <div class="slide-content-col">
+          <div class="slide-cat" style="color:#ca8a04;">Urban Infrastructure</div>
+          <h2 class="slide-title">Street Light Supply</h2>
+          <p class="slide-desc">Procurement of complete LED street lighting systems including poles, luminaires, and smart dimming controls for urban road and public space illumination projects across multiple sites.</p>
+          <div class="slide-highlights">
+            <div class="slide-highlight">
+              <div class="sh-label">Ref No.</div>
+              <div class="sh-val">STX-002-2025</div>
             </div>
-            <div class="meta-item">
-              <span class="meta-label">Category</span>
-              <span class="meta-value">Infrastructure</span>
+            <div class="slide-highlight">
+              <div class="sh-label">Category</div>
+              <div class="sh-val">Infrastructure</div>
+            </div>
+            <div class="slide-highlight">
+              <div class="sh-label">Bid Security</div>
+              <div class="sh-val">KES 30,000</div>
+            </div>
+            <div class="slide-highlight deadline-hl">
+              <div class="sh-label">Closes</div>
+              <div class="sh-val">15 Feb 2026</div>
             </div>
           </div>
-          <a href="tenders/streetlight.html" class="card-link">
-            Apply Now
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
+          <div class="slide-actions">
+            <a href="tenders/streetlight.html" class="slide-btn-primary" style="background:#ca8a04;border-color:#ca8a04;">
+              View Tender &amp; Apply
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <div class="slide-progress-bar"><div class="slide-progress-fill" style="background:#ca8a04;" id="progressBar"></div></div>
+          </div>
         </div>
       </div>
 
-      <!-- Card 3: Fertilizer -->
-      <div class="tender-card">
-        <div class="card-img-wrap">
-          <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&auto=format&fit=crop" alt="Agricultural Fertilizer" />
-          <div class="card-ref">STX-003</div>
-          <div class="card-status">Open</div>
+      <!-- SLIDE 3: Fertilizer -->
+      <div class="spotlight-slide" data-product="fertilizer" style="--pc:#16a34a;--pc-pale:#f0fdf4;">
+        <div class="slide-img-col">
+          <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=900&auto=format&fit=crop" alt="Fertilizer" />
+          <div class="slide-ref-tag">STX-003</div>
+          <div class="slide-status">● Open</div>
         </div>
-        <div class="card-body">
-          <div class="card-title">Fertilizer Supply</div>
-          <p class="card-excerpt">Bulk supply of NPK, urea, and micronutrient fertilizers for agricultural support programmes across multiple counties.</p>
-          <div class="card-meta">
-            <div class="meta-item">
-              <span class="meta-label">Deadline</span>
-              <span class="meta-value">28 Feb 2026</span>
+        <div class="slide-content-col">
+          <div class="slide-cat" style="color:#16a34a;">Agriculture</div>
+          <h2 class="slide-title">Fertilizer Supply</h2>
+          <p class="slide-desc">Bulk supply of NPK, urea, CAN, and DAP fertilizers for county-level agricultural support programmes. Suppliers must hold a valid PCPB distributor licence and provide certified batch analysis reports.</p>
+          <div class="slide-highlights">
+            <div class="slide-highlight">
+              <div class="sh-label">Ref No.</div>
+              <div class="sh-val">STX-003-2025</div>
             </div>
-            <div class="meta-item">
-              <span class="meta-label">Category</span>
-              <span class="meta-value">Agriculture</span>
+            <div class="slide-highlight">
+              <div class="sh-label">Category</div>
+              <div class="sh-val">Agriculture</div>
+            </div>
+            <div class="slide-highlight">
+              <div class="sh-label">Bid Security</div>
+              <div class="sh-val">KES 25,000</div>
+            </div>
+            <div class="slide-highlight deadline-hl">
+              <div class="sh-label">Closes</div>
+              <div class="sh-val">28 Feb 2026</div>
             </div>
           </div>
-          <a href="tenders/fertilizer.html" class="card-link">
-            Apply Now
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
+          <div class="slide-actions">
+            <a href="tenders/fertilizer.html" class="slide-btn-primary" style="background:#16a34a;border-color:#16a34a;">
+              View Tender &amp; Apply
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <div class="slide-progress-bar"><div class="slide-progress-fill" style="background:#16a34a;" id="progressBar"></div></div>
+          </div>
         </div>
       </div>
 
-      <!-- Card 4: Hospital Equipment -->
-      <div class="tender-card">
-        <div class="card-img-wrap">
-          <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&auto=format&fit=crop" alt="Hospital Medical Equipment" />
-          <div class="card-ref">STX-004</div>
-          <div class="card-status">Open</div>
+      <!-- SLIDE 4: Hospital Equipment -->
+      <div class="spotlight-slide" data-product="hospital" style="--pc:#0891b2;--pc-pale:#ecfeff;">
+        <div class="slide-img-col">
+          <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=900&auto=format&fit=crop" alt="Hospital Equipment" />
+          <div class="slide-ref-tag">STX-004</div>
+          <div class="slide-status">● Open</div>
         </div>
-        <div class="card-body">
-          <div class="card-title">Hospital Equipment</div>
-          <p class="card-excerpt">Supply of diagnostic and surgical medical equipment including imaging systems, theatre tools, and patient monitoring devices.</p>
-          <div class="card-meta">
-            <div class="meta-item">
-              <span class="meta-label">Deadline</span>
-              <span class="meta-value">20 Mar 2026</span>
+        <div class="slide-content-col">
+          <div class="slide-cat" style="color:#0891b2;">Healthcare</div>
+          <h2 class="slide-title">Hospital Equipment Supply</h2>
+          <p class="slide-desc">Supply, delivery, installation, and commissioning of diagnostic and surgical medical equipment including imaging systems, theatre tools, anaesthesia machines, and patient monitoring devices for designated facilities.</p>
+          <div class="slide-highlights">
+            <div class="slide-highlight">
+              <div class="sh-label">Ref No.</div>
+              <div class="sh-val">STX-004-2025</div>
             </div>
-            <div class="meta-item">
-              <span class="meta-label">Category</span>
-              <span class="meta-value">Healthcare</span>
+            <div class="slide-highlight">
+              <div class="sh-label">Category</div>
+              <div class="sh-val">Healthcare</div>
+            </div>
+            <div class="slide-highlight">
+              <div class="sh-label">Bid Security</div>
+              <div class="sh-val">KES 75,000</div>
+            </div>
+            <div class="slide-highlight deadline-hl">
+              <div class="sh-label">Closes</div>
+              <div class="sh-val">20 Mar 2026</div>
             </div>
           </div>
-          <a href="tenders/hospital-equipment.html" class="card-link">
-            Apply Now
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
+          <div class="slide-actions">
+            <a href="tenders/hospital-equipment.html" class="slide-btn-primary" style="background:#0891b2;border-color:#0891b2;">
+              View Tender &amp; Apply
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <div class="slide-progress-bar"><div class="slide-progress-fill" style="background:#0891b2;" id="progressBar"></div></div>
+          </div>
         </div>
       </div>
 
-      <!-- Card 5: Solar Panel -->
-      <div class="tender-card">
-        <div class="card-img-wrap">
-          <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&auto=format&fit=crop" alt="Solar Panels" />
-          <div class="card-ref">STX-005</div>
-          <div class="card-status">Open</div>
+      <!-- SLIDE 5: Solar Panels -->
+      <div class="spotlight-slide" data-product="solar" style="--pc:#f97316;--pc-pale:#fff7ed;">
+        <div class="slide-img-col">
+          <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=900&auto=format&fit=crop" alt="Solar Panels" />
+          <div class="slide-ref-tag">STX-005</div>
+          <div class="slide-status">● Open</div>
         </div>
-        <div class="card-body">
-          <div class="card-title">Solar Panel Supply</div>
-          <p class="card-excerpt">Procurement of monocrystalline photovoltaic panels, inverters, and mounting structures for off-grid and on-grid installations.</p>
-          <div class="card-meta">
-            <div class="meta-item">
-              <span class="meta-label">Deadline</span>
-              <span class="meta-value">31 Mar 2026</span>
+        <div class="slide-content-col">
+          <div class="slide-cat" style="color:#f97316;">Renewable Energy</div>
+          <h2 class="slide-title">Solar Panel Supply</h2>
+          <p class="slide-desc">Procurement of monocrystalline PERC photovoltaic panels, string inverters, LiFePO4 battery banks, and aluminium mounting structures for off-grid and on-grid renewable energy installations.</p>
+          <div class="slide-highlights">
+            <div class="slide-highlight">
+              <div class="sh-label">Ref No.</div>
+              <div class="sh-val">STX-005-2025</div>
             </div>
-            <div class="meta-item">
-              <span class="meta-label">Category</span>
-              <span class="meta-value">Renewable</span>
+            <div class="slide-highlight">
+              <div class="sh-label">Category</div>
+              <div class="sh-val">Renewable</div>
+            </div>
+            <div class="slide-highlight">
+              <div class="sh-label">Bid Security</div>
+              <div class="sh-val">KES 40,000</div>
+            </div>
+            <div class="slide-highlight deadline-hl">
+              <div class="sh-label">Closes</div>
+              <div class="sh-val">31 Mar 2026</div>
             </div>
           </div>
-          <a href="tenders/solar-panel.html" class="card-link">
-            Apply Now
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
+          <div class="slide-actions">
+            <a href="tenders/solar-panel.html" class="slide-btn-primary" style="background:#f97316;border-color:#f97316;">
+              View Tender &amp; Apply
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <div class="slide-progress-bar"><div class="slide-progress-fill" style="background:#f97316;" id="progressBar"></div></div>
+          </div>
         </div>
       </div>
 
-    </div><!-- /carousel-track -->
-  </div><!-- /carousel-wrapper -->
+    </div><!-- /spotlight-track -->
 
-  <div class="carousel-controls">
-    <button class="carousel-btn" id="carouselPrev" aria-label="Previous">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+    <!-- Prev / Next arrows -->
+    <button class="spotlight-arrow left" id="spotPrev" aria-label="Previous">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
     </button>
-    <div class="carousel-dots" id="carouselDots"></div>
-    <button class="carousel-btn" id="carouselNext" aria-label="Next">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    <button class="spotlight-arrow right" id="spotNext" aria-label="Next">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
     </button>
-  </div>
+  </div><!-- /spotlight-track-wrap -->
 </section>
 
-<!-- ── WHY SOLARTEX ── -->
+<!-- WHY SOLARTEX -->
 <section class="why-section" id="why">
   <div class="why-inner">
-    <div class="section-header" style="text-align:left;">
-      <div class="section-eyebrow" style="color:var(--gold);">Why Solartex</div>
-      <h2 class="section-title" style="color:var(--text-dark);">A Transparent <span style="color:var(--gold);">Procurement</span> Process</h2>
+    <div class="section-header">
+      <div class="section-eyebrow">Why Solartex</div>
+      <h2 class="section-title">A <span>Transparent</span> Procurement Process</h2>
+      <p class="section-desc">We are committed to open, fair, and efficient procurement that gives every eligible supplier a fair shot.</p>
     </div>
     <div class="why-grid">
-      <div class="why-image">
-        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&auto=format&fit=crop" alt="Business meeting" />
-        <div class="why-image-accent"></div>
+      <div class="why-card">
+        <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+        <h4>Open Competition</h4>
+        <p>All tenders are open to any eligible registered business. Evaluation is merit-based — price, quality, and compliance.</p>
       </div>
-      <div class="why-points">
-        <div class="why-point">
-          <div class="why-icon">
-            <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-          </div>
-          <div>
-            <h4>Open & Fair Competition</h4>
-            <p>All tenders are open to any eligible registered business. Evaluation is conducted on merit — price, quality, and compliance with specifications.</p>
-          </div>
-        </div>
-        <div class="why-point">
-          <div class="why-icon">
-            <svg viewBox="0 0 24 24"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
-          </div>
-          <div>
-            <h4>Secure Document Submission</h4>
-            <p>All supplier documents are handled with strict confidentiality. Only the evaluation committee accesses submitted materials.</p>
-          </div>
-        </div>
-        <div class="why-point">
-          <div class="why-icon">
-            <svg viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-          </div>
-          <div>
-            <h4>Fast Evaluation Turnaround</h4>
-            <p>Bid evaluations are completed within 14 working days of the tender closing date. Successful applicants are notified by official correspondence.</p>
-          </div>
-        </div>
-        <div class="why-point">
-          <div class="why-icon">
-            <svg viewBox="0 0 24 24"><path d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
-          </div>
-          <div>
-            <h4>Dedicated Supplier Support</h4>
-            <p>Questions about tender specifications? Our procurement desk is available Monday–Friday 8 AM–5 PM to assist prospective suppliers.</p>
-          </div>
-        </div>
+      <div class="why-card">
+        <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg></div>
+        <h4>Confidential Submissions</h4>
+        <p>All submitted documents are handled with strict confidentiality. Only the evaluation committee has access.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div>
+        <h4>Fast Turnaround</h4>
+        <p>Evaluations are completed within 14 working days of the tender closing date. No unnecessary delays.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg></div>
+        <h4>Supplier Support</h4>
+        <p>Our procurement desk is available Monday–Friday, 8 AM–5 PM to assist with any queries about the process.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ── CTA STRIP ── -->
-<section class="cta-strip">
-  <h2>Ready to Submit Your Bid?</h2>
-  <p>Browse the active tender categories and submit your application before the closing dates.</p>
-  <a href="#tenders" class="btn-primary">View Open Tenders</a>
+<!-- DARK CALLOUT — HOW TO APPLY -->
+<section class="callout-section" id="how-to-apply">
+  <div class="callout-inner">
+    <div class="callout-text">
+      <div class="section-eyebrow">Simple Process</div>
+      <h2 class="section-title" style="color:#fff;">How to <span>Apply</span></h2>
+      <p class="section-desc">Four straightforward steps to submit your tender application through this portal.</p>
+      <div class="callout-steps">
+        <div class="callout-step">
+          <div class="step-circle">1</div>
+          <div>
+            <h4>Choose a Tender</h4>
+            <p>Browse the open categories and click the one relevant to your business and product range.</p>
+          </div>
+        </div>
+        <div class="callout-step">
+          <div class="step-circle">2</div>
+          <div>
+            <h4>Review Specifications</h4>
+            <p>Read the full scope, technical requirements, eligibility criteria, and required documents carefully.</p>
+          </div>
+        </div>
+        <div class="callout-step">
+          <div class="step-circle">3</div>
+          <div>
+            <h4>Prepare Documents</h4>
+            <p>Gather your registration certificate, tax compliance, product certifications, and bid security.</p>
+          </div>
+        </div>
+        <div class="callout-step">
+          <div class="step-circle">4</div>
+          <div>
+            <h4>Submit Before Deadline</h4>
+            <p>Complete the online form and upload your documents. Late submissions will not be considered.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="callout-image">
+      <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&auto=format&fit=crop" alt="Business procurement" />
+      <div class="callout-badge">
+        <div class="b-num">2025</div>
+        <div class="b-txt">Procurement<br>Cycle</div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- ── FOOTER ── -->
+<!-- CTA STRIP -->
+<section class="cta-strip">
+  <h2>Ready to Submit Your Bid?</h2>
+  <p>Browse the active tender categories and apply before the closing dates. All eligible registered businesses are welcome.</p>
+  <div class="cta-buttons">
+    <a href="#tenders" class="btn-white">View Open Tenders</a>
+    <a href="mailto:procurement@solartex.co.ke" class="btn-white-outline">Contact Procurement Desk</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
 <footer>
   <div class="footer-inner">
     <div class="footer-brand">
       <div class="brand-name">Solartex Limited</div>
       <p>Connecting quality suppliers to critical infrastructure and service delivery needs through transparent, open procurement.</p>
+      <div class="footer-contact">
+        <a href="tel:+254700000000">
+          <svg viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          +254 700 000 000
+        </a>
+        <a href="mailto:procurement@solartex.co.ke">
+          <svg viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          procurement@solartex.co.ke
+        </a>
+      </div>
     </div>
     <div class="footer-col">
       <h5>Tenders</h5>
@@ -341,17 +452,17 @@
     <div class="footer-col">
       <h5>Information</h5>
       <ul>
-        <li><a href="#">How to Apply</a></li>
-        <li><a href="#">Eligibility Criteria</a></li>
-        <li><a href="#">Document Checklist</a></li>
-        <li><a href="#">Evaluation Process</a></li>
+        <li><a href="#how-to-apply">How to Apply</a></li>
+        <li><a href="#why">Eligibility Criteria</a></li>
+        <li><a href="#tenders">Active Tenders</a></li>
+        <li><a href="#how-to-apply">Evaluation Process</a></li>
       </ul>
     </div>
     <div class="footer-col">
       <h5>Contact</h5>
       <ul>
-        <li><a href="#">procurement@solartex.co.ke</a></li>
-        <li><a href="#">+254 700 000 000</a></li>
+        <li><a href="mailto:procurement@solartex.co.ke">procurement@solartex.co.ke</a></li>
+        <li><a href="tel:+254700000000">+254 700 000 000</a></li>
         <li><a href="#">Nairobi, Kenya</a></li>
         <li><a href="#">Mon–Fri, 8 AM–5 PM</a></li>
       </ul>
@@ -359,7 +470,7 @@
   </div>
   <div class="footer-bottom">
     <span>© 2025 Solartex Limited. All rights reserved.</span>
-    <span>Tender Portal v1.0</span>
+    <span>Tender Portal v3.0</span>
   </div>
 </footer>
 
