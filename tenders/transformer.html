@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="../assets/css/styles.css" />
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polygon points='50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5' fill='%23c8992a'/></svg>" />
 </head>
-<body>
+<body class="product-transformer">
 
 <!-- NAVBAR -->
 <nav class="navbar">
@@ -28,7 +28,7 @@
       <li><a href="streetlight.html">Street Light</a></li>
       <li><a href="fertilizer.html">Fertilizer</a></li>
       <li><a href="hospital-equipment.html">Hospital Equipment</a></li>
-      <li><a href="solar-panel.html" class="nav-cta">Solar Panels</a></li>
+      <li><a href="solar-panel.html" class="">Solar Panels</a></li>
     </ul>
     <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
   </div>
@@ -48,7 +48,11 @@
     <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1400&auto=format&fit=crop" alt="Electrical Transformer" />
   </div>
   <div class="page-hero-content">
-    <div class="breadcrumb">
+    <div class="product-icon-badge">
+          <div class="badge-icon"><svg viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div>
+          Electrical Infrastructure
+        </div>
+        <div class="breadcrumb">
       <a href="../index.html">Home</a>
       <span>›</span>
       <span>Transformer Supply</span>
@@ -150,7 +154,8 @@
   <!-- SIDEBAR -->
   <aside class="tender-sidebar">
     <div class="sidebar-card">
-      <h4>Tender Details</h4>
+      <div class="sidebar-card-header"><h4>Tender Details</h4></div>
+      <div class="sidebar-card-body">
       <div class="sidebar-detail">
         <div class="sd-label">Reference No.</div>
         <div class="sd-value">STX-001-2025</div>
