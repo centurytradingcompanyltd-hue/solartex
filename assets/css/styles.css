@@ -78,43 +78,44 @@ a  { text-decoration: none; color: inherit; }
 }
 
 .nav-inner {
-  max-width: 1280px; margin: 0 auto; padding: 0 1.5rem;
+  max-width: 1400px; margin: 0 auto; padding: 0 1.25rem;
   width: 100%;
-  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  display: flex; align-items: center; gap: 1.5rem;
 }
 
-.nav-logo { display: flex; align-items: center; gap: 0.7rem; flex-shrink: 0; }
+.nav-logo { display: flex; align-items: center; gap: 0.55rem; flex-shrink: 0; margin-right: auto; }
 .nav-logo-icon {
-  width: 42px; height: 42px; background: var(--orange);
-  border-radius: 8px; display: flex; align-items: center; justify-content: center;
+  width: 36px; height: 36px; background: var(--orange);
+  border-radius: 7px; display: flex; align-items: center; justify-content: center;
 }
-.nav-logo-icon svg { width: 24px; height: 24px; fill: white; }
+.nav-logo-icon svg { width: 20px; height: 20px; fill: white; }
 .nav-logo-text .brand {
-  font-family: 'Montserrat', sans-serif; font-size: 1.05rem; font-weight: 800;
+  font-family: 'Montserrat', sans-serif; font-size: 0.95rem; font-weight: 800;
   color: var(--charcoal); letter-spacing: -0.01em; display: block; line-height: 1.1;
 }
 .nav-logo-text .tagline {
-  font-size: 0.6rem; color: var(--grey-400);
-  letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600;
+  font-size: 0.56rem; color: var(--grey-400);
+  letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600;
+  white-space: nowrap;
 }
 
-.nav-links { display: flex; align-items: center; gap: 0.1rem; list-style: none; }
+.nav-links { display: flex; align-items: center; gap: 0; list-style: none; flex-wrap: nowrap; }
 .nav-links a {
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.78rem; font-weight: 600; color: var(--charcoal);
-  padding: 0.45rem 0.8rem; border-radius: 4px;
-  transition: var(--transition); white-space: nowrap; letter-spacing: 0.02em;
+  font-size: 0.7rem; font-weight: 600; color: var(--charcoal);
+  padding: 0.45rem 0.55rem; border-radius: 4px;
+  transition: var(--transition); white-space: nowrap; letter-spacing: 0.01em;
   text-transform: uppercase;
 }
 .nav-links a:hover, .nav-links a.active { color: var(--orange); }
 .nav-links a.active { border-bottom: 2px solid var(--orange); }
 .nav-cta {
   background: var(--orange) !important; color: var(--white) !important;
-  padding: 0.5rem 1.1rem !important; border-radius: 4px !important;
+  padding: 0.5rem 1rem !important; border-radius: 4px !important;
 }
 .nav-cta:hover { background: var(--orange-dark) !important; }
 
-.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; flex-shrink: 0; }
 .hamburger span { display: block; width: 24px; height: 2px; background: var(--charcoal); border-radius: 2px; transition: var(--transition); }
 
 .mobile-menu {
@@ -667,6 +668,10 @@ footer {
 .fade-up:nth-child(4) { animation-delay: 0.42s; }
 
 /* ── RESPONSIVE ── */
+@media (max-width: 1100px) {
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+}
 @media (max-width: 1024px) {
   .stats-bar-inner { grid-template-columns: repeat(2, 1fr); }
   .why-grid { grid-template-columns: 1fr 1fr; }
@@ -677,8 +682,6 @@ footer {
   .footer-inner { grid-template-columns: 1fr 1fr; gap: 2rem; }
 }
 @media (max-width: 768px) {
-  .nav-links { display: none; }
-  .hamburger { display: flex; }
   .why-grid { grid-template-columns: 1fr; }
   .form-grid { grid-template-columns: 1fr; padding: 1.5rem; }
   .form-group.full { grid-column: 1; }
@@ -704,6 +707,10 @@ footer {
   --product-fertilizer:     #16a34a; /* Leaf green */
   --product-hospital:       #0891b2; /* Medical teal */
   --product-solar:          #f97316; /* Solar orange (same as brand) */
+  --product-aircon:         #0ea5e9; /* Cool sky blue */
+  --product-shower:         #e11d48; /* Warm rose-red */
+  --product-storage:        #7c3aed; /* Battery violet */
+  --product-waterheater:    #f59e0b; /* Heater amber */
 }
 
 /* Applied via body class on each page */
@@ -712,6 +719,10 @@ body.product-streetlight  { --product: #ca8a04; --product-dark: #a16207; --produ
 body.product-fertilizer   { --product: #16a34a; --product-dark: #15803d; --product-pale: #f0fdf4; --product-mid: #bbf7d0; }
 body.product-hospital     { --product: #0891b2; --product-dark: #0e7490; --product-pale: #ecfeff; --product-mid: #a5f3fc; }
 body.product-solar        { --product: #f97316; --product-dark: #ea6a06; --product-pale: #fff7ed; --product-mid: #fed7aa; }
+body.product-aircon       { --product: #0ea5e9; --product-dark: #0284c7; --product-pale: #f0f9ff; --product-mid: #bae6fd; }
+body.product-shower       { --product: #e11d48; --product-dark: #be123c; --product-pale: #fff1f2; --product-mid: #fecdd3; }
+body.product-storage      { --product: #7c3aed; --product-dark: #6d28d9; --product-pale: #f5f3ff; --product-mid: #ddd6fe; }
+body.product-waterheater  { --product: #f59e0b; --product-dark: #d97706; --product-pale: #fffbeb; --product-mid: #fde68a; }
 
 /* Page hero accent stripe — product colour */
 body[class^="product-"] .page-hero-content {
@@ -796,12 +807,36 @@ body[class^="product-"] .apply-section { border-top-color: var(--product); }
 .tender-card[data-product="solar"] .card-category { color: var(--product-solar); }
 .tender-card[data-product="solar"] .card-ref { background: var(--product-solar); }
 
+.tender-card[data-product="aircon"] .card-deadline { border-left-color: var(--product-aircon); color: #0c4a6e; background: #f0f9ff; }
+.tender-card[data-product="aircon"] .card-deadline svg { fill: var(--product-aircon); }
+.tender-card[data-product="aircon"] .card-category { color: var(--product-aircon); }
+.tender-card[data-product="aircon"] .card-ref { background: var(--product-aircon); }
+
+.tender-card[data-product="shower"] .card-deadline { border-left-color: var(--product-shower); color: #881337; background: #fff1f2; }
+.tender-card[data-product="shower"] .card-deadline svg { fill: var(--product-shower); }
+.tender-card[data-product="shower"] .card-category { color: var(--product-shower); }
+.tender-card[data-product="shower"] .card-ref { background: var(--product-shower); }
+
+.tender-card[data-product="storage"] .card-deadline { border-left-color: var(--product-storage); color: #4c1d95; background: #f5f3ff; }
+.tender-card[data-product="storage"] .card-deadline svg { fill: var(--product-storage); }
+.tender-card[data-product="storage"] .card-category { color: var(--product-storage); }
+.tender-card[data-product="storage"] .card-ref { background: var(--product-storage); }
+
+.tender-card[data-product="waterheater"] .card-deadline { border-left-color: var(--product-waterheater); color: #78350f; background: #fffbeb; }
+.tender-card[data-product="waterheater"] .card-deadline svg { fill: var(--product-waterheater); }
+.tender-card[data-product="waterheater"] .card-category { color: var(--product-waterheater); }
+.tender-card[data-product="waterheater"] .card-ref { background: var(--product-waterheater); }
+
 /* Card hover border also matches product */
 .tender-card[data-product="transformer"]:hover { border-color: var(--product-transformer); }
 .tender-card[data-product="streetlight"]:hover  { border-color: var(--product-streetlight); }
 .tender-card[data-product="fertilizer"]:hover   { border-color: var(--product-fertilizer); }
 .tender-card[data-product="hospital"]:hover      { border-color: var(--product-hospital); }
 .tender-card[data-product="solar"]:hover         { border-color: var(--product-solar); }
+.tender-card[data-product="aircon"]:hover        { border-color: var(--product-aircon); }
+.tender-card[data-product="shower"]:hover        { border-color: var(--product-shower); }
+.tender-card[data-product="storage"]:hover       { border-color: var(--product-storage); }
+.tender-card[data-product="waterheater"]:hover   { border-color: var(--product-waterheater); }
 
 /* Product icon badge on page hero */
 .product-icon-badge {
@@ -1018,4 +1053,58 @@ body[class^="product-"] .tender-meta-item svg { fill: var(--product-mid); }
   .spotlight-tab-bar { gap: 0.25rem; }
   .stab { font-size: 0.65rem; padding: 0.4rem 0.7rem; }
   .slide-highlights { grid-template-columns: 1fr 1fr; }
+}
+
+/* =============================================
+   PRODUCT GALLERY — hero banner + grid
+   Used on every tender detail page
+   ============================================= */
+
+.gallery-section {
+  padding: 3.5rem 0;
+  background: var(--white);
+  border-top: 1px solid var(--border);
+}
+.gallery-inner {
+  max-width: 1280px; margin: 0 auto; padding: 0 1.5rem;
+}
+.gallery-header { margin-bottom: 1.75rem; }
+.gallery-header .section-eyebrow { color: var(--product, var(--orange)); }
+.gallery-header .section-eyebrow::before { background: var(--product, var(--orange)); }
+.gallery-header h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(1.2rem, 2vw, 1.6rem); font-weight: 800;
+  color: var(--charcoal); margin-bottom: 0.4rem;
+}
+.gallery-header p { color: var(--grey-600); font-size: 0.9rem; max-width: 560px; }
+
+/* Grid: first image large, rest smaller — classic bento layout */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 160px;
+  gap: 0.85rem;
+}
+.gallery-grid img {
+  width: 100%; height: 100%; object-fit: cover;
+  border-radius: 8px; display: block;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.gallery-grid img:hover { transform: scale(1.02); box-shadow: var(--shadow-lg); }
+
+.gallery-grid .g-large {
+  grid-column: span 2; grid-row: span 2;
+}
+.gallery-grid .g-tall {
+  grid-row: span 2;
+}
+
+@media (max-width: 900px) {
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 150px; }
+  .gallery-grid .g-large { grid-column: span 2; grid-row: span 1; height: auto; }
+}
+@media (max-width: 480px) {
+  .gallery-grid { grid-template-columns: 1fr; grid-auto-rows: 200px; }
+  .gallery-grid .g-large { grid-column: span 1; }
 }

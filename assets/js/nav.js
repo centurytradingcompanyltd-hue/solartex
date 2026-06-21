@@ -1,6 +1,11 @@
 /* =============================================
-   SOLARTEX LIMITED — Shared JavaScript
-   nav.js: hamburger, active nav, spotlight carousel, forms
+   SOLARTECHGLOBAL COMPANY LTD — Shared JavaScript
+   nav.js: hamburger, active nav, spotlight carousel,
+   and lightweight form validation (file size only).
+   Forms submit natively to Web3Forms — no fetch(),
+   no e.preventDefault() on success, no injected
+   success message. This keeps the script from
+   resembling credential-harvesting page patterns.
    ============================================= */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -134,33 +139,46 @@ document.addEventListener('DOMContentLoaded', () => {
   initForms();
 });
 
-// ── APPLICATION FORM ─────────────────────────
+// ── APPLICATION FORM — native submission, no JS interception ──
 function initForms() {
   const form       = document.getElementById('applyForm');
-  const successMsg = document.getElementById('successMessage');
-
   if (!form) return;
 
-  const fileInput = document.getElementById('docUpload');
-  const fileLabel = document.getElementById('fileLabel');
+  const fileInput   = document.getElementById('docUpload');
+  const fileLabel   = document.getElementById('fileLabel');
+  const MAX_BYTES   = 5 * 1024 * 1024; // 5 MB — Web3Forms free-tier limit
+
   if (fileInput && fileLabel) {
     fileInput.addEventListener('change', () => {
+      const file = fileInput.files[0];
+      if (file && file.size > MAX_BYTES) {
+        fileLabel.textContent = 'File too large — please choose a file under 5 MB';
+        fileLabel.style.color = '#dc2626';
+        fileInput.value = '';
+        return;
+      }
+      fileLabel.style.color = '';
       const names = Array.from(fileInput.files).map(f => f.name).join(', ');
       fileLabel.textContent = names || 'Click to upload or drag & drop';
     });
   }
 
-  form.addEventListener('submit', e => {
-    e.preventDefault();
+  // Block oversized attachments before the browser submits the form natively.
+  // No e.preventDefault() on the success path — the form posts to Web3Forms
+  // directly and the browser follows the redirect to the thank-you page.
+  form.addEventListener('submit', (e) => {
+    const file = fileInput ? fileInput.files[0] : null;
+    if (file && file.size > MAX_BYTES) {
+      e.preventDefault();
+      fileLabel.textContent = 'File exceeds 5 MB — please choose a smaller file';
+      fileLabel.style.color = '#dc2626';
+      return;
+    }
     const btn = form.querySelector('.btn-primary');
-    btn.textContent = 'Submitting…';
-    btn.disabled = true;
-    setTimeout(() => {
-      form.style.display = 'none';
-      if (successMsg) {
-        successMsg.classList.add('show');
-        successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      }
-    }, 1200);
+    if (btn) {
+      btn.textContent = 'Submitting…';
+      btn.disabled = true;
+    }
+    // Form submits natively here — no fetch(), no fake success injection.
   });
 }
