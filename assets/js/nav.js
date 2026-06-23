@@ -41,6 +41,59 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // ── HERO BACKGROUND CAROUSEL ──────────────────
+  const heroSlides   = Array.from(document.querySelectorAll('.hero-bg-slide'));
+  const heroName     = document.getElementById('heroShowcaseName');
+  const heroBtn      = document.getElementById('heroShowcaseBtn');
+  const heroDotsWrap = document.getElementById('heroShowcaseDots');
+
+  if (heroSlides.length && heroName && heroBtn && heroDotsWrap) {
+    let heroIdx = 0;
+    const HERO_DURATION = 5000; // ms per slide
+    let heroTimer = null;
+
+    // Build dots
+    heroSlides.forEach((_, i) => {
+      const dot = document.createElement('button');
+      dot.className = 'hsd-dot' + (i === 0 ? ' active' : '');
+      dot.setAttribute('aria-label', `Show slide ${i + 1}`);
+      dot.addEventListener('click', () => {
+        showHeroSlide(i);
+        resetHeroAuto();
+      });
+      heroDotsWrap.appendChild(dot);
+    });
+    const heroDots = Array.from(heroDotsWrap.querySelectorAll('.hsd-dot'));
+
+    function showHeroSlide(i) {
+      heroSlides[heroIdx].classList.remove('active');
+      heroDots[heroIdx].classList.remove('active');
+
+      heroIdx = (i + heroSlides.length) % heroSlides.length;
+
+      const slide = heroSlides[heroIdx];
+      slide.classList.add('active');
+      heroDots[heroIdx].classList.add('active');
+
+      heroName.textContent = slide.dataset.product;
+      heroBtn.setAttribute('href', slide.dataset.link);
+    }
+
+    function startHeroAuto() {
+      heroTimer = setInterval(() => showHeroSlide(heroIdx + 1), HERO_DURATION);
+    }
+    function stopHeroAuto() { clearInterval(heroTimer); }
+    function resetHeroAuto() { stopHeroAuto(); startHeroAuto(); }
+
+    const heroSection = document.querySelector('.hero');
+    if (heroSection) {
+      heroSection.addEventListener('mouseenter', stopHeroAuto);
+      heroSection.addEventListener('mouseleave', startHeroAuto);
+    }
+
+    startHeroAuto();
+  }
+
   // ── SPOTLIGHT CAROUSEL ───────────────────────
   const slides      = Array.from(document.querySelectorAll('.spotlight-slide'));
   const tabs        = Array.from(document.querySelectorAll('.stab'));
